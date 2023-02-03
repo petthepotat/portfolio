@@ -55,7 +55,7 @@ export default function Home() {
         <div className={styles.Spotify}>
           <div className={styles.SpotifyTitle}>Spotify</div>
           <div className={styles.SpotifySubtitle}>Here's what I'm listening to!</div>
-          <iframe style={{borderRadius:`12px`}} src="https://open.spotify.com/embed/playlist/15XnQ3JZEtfi3CtqsIMP7w?utm_source=generator" width="40%%" height="400rem" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe style={{borderRadius:`12px`}} src="https://open.spotify.com/embed/playlist/1UAQ7WYIxbptNETMqbemLQ?utm_source=generator" width="50%" height="100rem" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
 
         {/* kofi */}
