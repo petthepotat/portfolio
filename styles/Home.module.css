@@ -276,12 +276,13 @@
   padding: 20px;
   margin-bottom: 1rem;
   font-family: "Share Tech Mono";
-  background:rgba(50, 50, 50, 0.25);
+  background:rgba(37, 36, 36, 0.5);
   border-radius: 5%;
   align-items: left;
   justify-content: left;
   text-align: left !important;
   transition: all 0.5s ease-out;
+  box-shadow: 3px 5px 5px rgba(255, 255, 255, 0.158);
 }
 
 .ContentCard img {
