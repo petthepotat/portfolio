@@ -51,7 +51,7 @@ export default function Home() {
           <div className={styles.GithubTitle}>
             Github
             <div className={styles.HeroIcon}>
-              <img alt="get github icon" src='favicon.ico' className={styles.HeroIconImage}></img>
+              <img alt="get github icon" src='https://cdn-icons-png.flaticon.com/512/3291/3291695.png' className={styles.HeroIconImage}></img>
             </div>
           </div>
           <div className={styles.GithubSubtitle}>Here are some projects!</div>
