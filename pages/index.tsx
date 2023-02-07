@@ -59,33 +59,40 @@ export default function Home() {
             <div className={styles.ContentCard}>
               <img src='git-portfolio.jpg'></img>
               <h1>portfolio</h1>
-              <h2>this took quite a while</h2>
+              <h2>this website!</h2>
             </div>
             <div className={styles.ContentCard}>
-              <h1>Hello</h1>
+              <img src='git-glfw-engine.png'></img>
+              <h1>OpenGL & C++</h1>
+              <h2>opengl rendering with c++</h2>
             </div>
             <div className={styles.ContentCard}>
-              <h1>Hello</h1>
+              <img src='git-rpg-prototype.png'></img>
+              <h1>RPG Prototype</h1>
+              <h2>i like rpg games</h2>
+            </div>
+          </div>
+        </div>
+
+        {/* side by side container */}
+        <div className={styles.Side2ContentContainer}>
+          {/* random spotify blob */}
+          <div className={styles.Side2ContentSection}>
+            <div className={styles.Spotify}>
+              <div className={styles.SpotifyTitle}>Spotify</div>
+              <div className={styles.SpotifySubtitle}>Here's what I'm listening to!</div>
+              <iframe  src="https://open.spotify.com/embed/playlist/1UAQ7WYIxbptNETMqbemLQ?utm_source=generator" 
+                    className={styles.SpotifyFrame} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
           </div>
 
-          <div>
-            {/*  get that weird card module u found the other day */}
-            <div className={styles.GithubCard}></div>
+          {/* kofi */}
+          <div className={styles.Kofi}>
+            <div className={styles.KofiTitle}>Kofi</div>
+            <div className={styles.KofiSubtitle}>Here's my kofi!</div>
+            <iframe id='kofiframe' src='https://ko-fi.com/petthepotat/?hidefeed=true&widget=true&embed=true&preview=true' 
+                className={styles.KofiFrame} title='petthepotat'></iframe>
           </div>
-        </div>
-      
-        {/* random spotify blob */}
-        <div className={styles.Spotify}>
-          <div className={styles.SpotifyTitle}>Spotify</div>
-          <div className={styles.SpotifySubtitle}>Here's what I'm listening to!</div>
-          <iframe style={{borderRadius:`12px`}} src="https://open.spotify.com/embed/playlist/1UAQ7WYIxbptNETMqbemLQ?utm_source=generator" width="50%" height="100rem" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-
-        {/* kofi */}
-        <div className={styles.Kofi}>
-          <div className={styles.KofiTitle}>Kofi</div>
-          <div className={styles.KofiSubtitle}>Here's my kofi!</div>
         </div>
 
         {/* About me */}
