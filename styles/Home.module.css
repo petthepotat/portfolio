@@ -6,7 +6,7 @@
   right: 0px;
   color: var(--dark-text-color);
   background: var(--dark-background); 
-  height: 100rem;
+  height: 170rem;
 }
 
 .ButtonText{
@@ -176,7 +176,6 @@
 }
 
 
-
 /* hero */
 
 .Hero {
@@ -312,13 +311,17 @@
   transform: scale(1.02);
 }
 
+.ContentContainer {
+  margin: 1rem;
+  position: relative;
+}
+
 
 /* github */
 .Github {
   position: relative;
   top: 10rem;
   padding: 20px;
-  margin-bottom: 1rem;
   font-family: "Share Tech Mono";
 }
 
@@ -344,9 +347,12 @@
 /*  side by side containre  */
 
 .Side2ContentContainer {
+  position: relative;
+  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1rem;
+  top: 10rem;
+  grid-column-gap: 0.5rem;
 }
 
 .Side2ContentSection {
@@ -356,7 +362,7 @@
 /* spotify */
 .Spotify {
   position: relative;
-  top: 10rem;
+  /* top: 10rem; */
 }
 
 .SpotifyFrame {
@@ -387,7 +393,7 @@
 /* kofi */
 .Kofi {
   position: relative;
-  top: 10rem;
+  /* top: 10rem; */
 }
 
 .KofiFrame {
@@ -397,6 +403,7 @@
   height: 20rem;
   background: var(--dark-kofi-back);
   padding: 5px;
+  border-radius: 5%;
 }
 
 .KofiTitle {
@@ -416,9 +423,47 @@
 
 
 /* about me */
-.AboutMe {
+.About {
   position: relative;
   top: 10rem;
+}
+
+.AboutTitle {
+  font-size: 50px;
+  line-height: 200%;
+  text-shadow: var(--dark-h1-shadow);
+  padding: 10px;
+  font-family: var(--title-font);
+}
+
+.AboutSubtitle {
+  font-family: var(--des-font);
+  font-size: 20px;
+  line-height: 200%;
+  translate: 20px;
+}
+
+.AboutContainer {
+  text-decoration: none;
+  font-family: var(--title-font);
+  color: var(--dark-text-color);
+  display: grid;
+  margin: 1rem;
+}
+
+.AboutSubContainer {
+  padding: 10px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.AboutCard {
+  padding: 10px;
+}
+
+.AboutSubContainer img {
+  width: 100%;
 }
 
 
@@ -426,5 +471,27 @@
 .Contact {
   position: relative;
   top: 10rem;
+  margin: 1rem;
+}
+
+.ContactTitle {
+  font-size: 50px;
+  line-height: 200%;
+  text-shadow: var(--dark-h1-shadow);
+  padding: 10px;
+  font-family: var(--title-font);
+}
+
+.ContactSubtitle {
+  font-family: var(--des-font);
+  font-size: 20px;
+  line-height: 200%;
+  translate: 20px;
+}
+
+.ContactEmailSender {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr, 1fr, 1fr;
 }
 

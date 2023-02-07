@@ -47,7 +47,7 @@ export default function Home() {
         </div>
 
         {/* github */}
-        <div className={styles.Github}>
+        <div className={`${styles.Github} ${styles.ContentContainer}`}>
           <div className={styles.GithubTitle}>
             Github
             <div className={styles.HeroIcon}>
@@ -78,31 +78,46 @@ export default function Home() {
         <div className={styles.Side2ContentContainer}>
           {/* random spotify blob */}
           <div className={styles.Side2ContentSection}>
-            <div className={styles.Spotify}>
+            <div className={`${styles.Spotify} ${styles.ContentContainer}`}>
               <div className={styles.SpotifyTitle}>Spotify</div>
               <div className={styles.SpotifySubtitle}>Here's what I'm listening to!</div>
-              <iframe  src="https://open.spotify.com/embed/playlist/1UAQ7WYIxbptNETMqbemLQ?utm_source=generator" 
+              <iframe src="https://open.spotify.com/embed/playlist/1UAQ7WYIxbptNETMqbemLQ?utm_source=generator" 
                     className={styles.SpotifyFrame} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
           </div>
 
           {/* kofi */}
-          <div className={styles.Kofi}>
+          <div className={`${styles.Kofi} ${styles.ContentContainer}`}>
             <div className={styles.KofiTitle}>Kofi</div>
             <div className={styles.KofiSubtitle}>Here's my kofi!</div>
+            {/*  random kofi thing -- plz check  */}
+            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+            <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'W7W8DGZ7W');kofiwidget2.draw();</script> 
             <iframe id='kofiframe' src='https://ko-fi.com/petthepotat/?hidefeed=true&widget=true&embed=true&preview=true' 
                 className={styles.KofiFrame} title='petthepotat'></iframe>
           </div>
         </div>
 
         {/* About me */}
-        <div className={styles.About}>
+        <div className={`${styles.About} ${styles.ContentContainer}`}>
           <div className={styles.AboutTitle}>About Me</div>
           <div className={styles.AboutSubtitle}>Here's some stuff about me!</div>
+          <div className={styles.AboutContainer}>
+            <div className={styles.AboutSubContainer}>
+              <img src='git-glfw-engine.png'></img>
+              <div className={styles.AboutCard}>
+                hawdw
+              </div>
+            </div>
+            <div className={styles.AboutSubContainer}>
+              <img src='git-glfw-engine.png'></img>
+              subcontainer
+            </div>
+          </div>
         </div>
 
         {/* Contact */}
-        <div className={styles.Contact}>
+        <div className={`${styles.Contact} ${styles.ContentContainer}`}>
           <div className={styles.ContactTitle}>Contact</div>
           <div className={styles.ContactSubtitle}>Here's how to contact me!</div>
 

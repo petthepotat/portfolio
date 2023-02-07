@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
   <>
     {/* inconsolata -- titles  */}
-    {/*  dancing script -- fancy  */}
+    {/* dancing script -- fancy  */}
     {/* indie flower -- descriptions */}
     {/* share tech mono -- general theme */}
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
