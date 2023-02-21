@@ -75,7 +75,7 @@ export default function Home() {
         </div>
 
         {/* side by side container */}
-        <div className={styles.Side2ContentContainer}>
+        <div className={styles.Side2ContentContainer} style={{position: `relative`, top: `10rem`}}>
           {/* random spotify blob */}
           <div className={styles.Side2ContentSection}>
             <div className={styles.Spotify}>

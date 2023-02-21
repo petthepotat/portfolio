@@ -6,7 +6,7 @@
   right: 0px;
   color: var(--dark-text-color);
   background: var(--dark-background); 
-  height: 100rem;
+  height: 130rem;
 }
 
 .ButtonText{
@@ -356,7 +356,6 @@
 /* spotify */
 .Spotify {
   position: relative;
-  top: 10rem;
 }
 
 .SpotifyFrame {
@@ -387,7 +386,6 @@
 /* kofi */
 .Kofi {
   position: relative;
-  top: 10rem;
 }
 
 .KofiFrame {
@@ -397,6 +395,7 @@
   height: 20rem;
   background: var(--dark-kofi-back);
   padding: 5px;
+  border-radius: 5%;
 }
 
 .KofiTitle {
