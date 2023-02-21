@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
 
 import styles from "../styles/Home.module.css"
 
@@ -18,15 +20,15 @@ export default function Home() {
       <nav className={styles.NavContainer}>
         <div className={styles.NavBarBackground}></div>
         <div className={styles.NavBar}>
-          <a href="#" className={styles.NavBarIcon}>
-            <img src='favicon.ico' className={styles.NavBarLogo}></img>
+          <Link href="#" className={styles.NavBarIcon}>
+            <Image alt='navbaricon' src='/favicon.ico' className={styles.NavBarLogo} width='100' height='100'/>
             <div className={`${styles.NavBarText} ${styles.NavBarLogoText}`}>petthepotat</div>
-          </a>
+          </Link>
           <span></span>
-          <div className={styles.NavBarButton}><a href="#">Home</a></div>
-          <div className={styles.NavBarButton}><a href="#">About</a></div>
-          <div className={styles.NavBarButton}><a href="#">Projects</a></div>
-          <div className={styles.NavBarButton}><a href="#">Contact</a></div>
+          <div className={styles.NavBarButton}><Link href="#">Home</Link></div>
+          <div className={styles.NavBarButton}><Link href="#">About</Link></div>
+          <div className={styles.NavBarButton}><Link href="#">Projects</Link></div>
+          <div className={styles.NavBarButton}><Link href="#">Contact</Link></div>
         </div>
       </nav>
 
@@ -35,11 +37,9 @@ export default function Home() {
         {/* hero */}
         <div className={styles.Hero}>
           <div className={`${styles.HeroBackContainer}}`}>
-            <img src='banner.png' className={styles.HeroBackground}/>
+            <Image src='/banner.png' alt='background image' width='1280' height='720' className={styles.HeroBackground}/>
           </div>
-
           <div className={styles.HeroSpacing}></div>
-
           <div className={styles.HeroText}>
             <div className={styles.HeroTitle}>petthepotat</div>
             <div className={styles.HeroSubtitle}>I'm a software developer</div>
@@ -51,23 +51,27 @@ export default function Home() {
           <div className={styles.GithubTitle}>
             Github
             <div className={styles.HeroIcon}>
-              <img alt="get github icon" src='https://cdn-icons-png.flaticon.com/512/3291/3291695.png' className={styles.HeroIconImage}></img>
+              <Image alt="github" src='https://cdn-icons-png.flaticon.com/512/3291/3291695.png' 
+                  width='100' height='100' className={styles.HeroIconImage}/>
             </div>
           </div>
           <div className={styles.GithubSubtitle}>Here are some projects!</div>
           <div className={styles.GithubContentContainer}>
             <div className={styles.ContentCard}>
-              <img src='git-portfolio.jpg'></img>
+              <Image src='/git-portfolio.jpg' alt='portfolio website' 
+                  width='720' height='360'/>
               <h1>portfolio</h1>
               <h2>this website!</h2>
             </div>
             <div className={styles.ContentCard}>
-              <img src='git-glfw-engine.png'></img>
+              <Image src='/git-glfw-engine.png' alt='glfw engine' 
+                  width='720' height='360'/>
               <h1>OpenGL & C++</h1>
               <h2>opengl rendering with c++</h2>
             </div>
             <div className={styles.ContentCard}>
-              <img src='git-rpg-prototype.png'></img>
+              <Image src='/git-rpg-prototype.png' alt='rpg' 
+                  width='720' height='360'/>
               <h1>RPG Prototype</h1>
               <h2>i like rpg games</h2>
             </div>
@@ -75,7 +79,7 @@ export default function Home() {
         </div>
 
         {/* side by side container */}
-        <div className={styles.Side2ContentContainer} style={{position: `relative`, top: `10rem`}}>
+        <div className={styles.Side2ContentContainer}>
           {/* random spotify blob */}
           <div className={styles.Side2ContentSection}>
             <div className={`${styles.Spotify} ${styles.ContentContainer}`}>
@@ -104,13 +108,15 @@ export default function Home() {
           <div className={styles.AboutSubtitle}>Here's some stuff about me!</div>
           <div className={styles.AboutContainer}>
             <div className={styles.AboutSubContainer}>
-              <img src='git-glfw-engine.png'></img>
+              <Image src='/git-glfw-engine.png' alt='glfw engine' 
+                  width='720' height='100' className={styles.ContentImage}/>
               <div className={styles.AboutCard}>
                 hawdw
               </div>
             </div>
             <div className={styles.AboutSubContainer}>
-              <img src='git-glfw-engine.png'></img>
+              <Image src='/git-glfw-engine.png' alt='glfw engine' 
+                  width='720' height='100' className={styles.ContentImage}/>
               subcontainer
             </div>
           </div>

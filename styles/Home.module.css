@@ -1,495 +1,494 @@
-
 .Body {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  color: var(--dark-text-color);
-  background: var(--dark-background); 
-  height: 130rem;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    color: var(--dark-text-color);
+    background: var(--dark-background);
+    height: 170rem;
 }
 
-.ButtonText{
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 16px;
-  /* identical to box height, or 100% */
-
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--dark-button-back);
+.ButtonText {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--dark-button-back);
 }
 
 
 /*  navbar  */
 
 .NavContainer {
-  z-index: 100;
+    z-index: 100;
+    height: 10rem;
 }
 
 .NavBar {
-  display: grid;
-  grid-template-columns: 1fr 8fr repeat(4, 1fr);
-  grid-gap: 2%;
-
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-
-  position: absolute;
-  height: 10rem;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-
-  /* Background */
-  /* background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #202020 100%); */
-  background: transparent;
-  z-index: inherit;
-  overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr 8fr repeat(4, 1fr);
+    grid-gap: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+    height: 10rem;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    /* Background */
+    /* background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, #202020 100%); */
+    background: transparent;
+    z-index: inherit;
+    overflow-x: hidden;
 }
 
 .NavBarBackground {
-  background: url('../public/channel-art.png');
-  background-size: cover;
-  background-position: center;
-  filter: blur(2px) brightness(0.3);
-  transform: scale(1.5);
-
-  position: absolute;
-  height: 10rem;
-  right: 0px;
-  top: 0px;
-  left: 0px;
-  z-index: inherit;
-  overflow-x: hidden;
+    background: url('../public/channel-art.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px) brightness(0.3);
+    transform: scale(1.5);
+    position: absolute;
+    height: 10rem;
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: inherit;
+    overflow-x: hidden;
 }
 
 .NavBarIcon {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 20px;
-  gap: 12px;
-
-  border-radius: 5%;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-  text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 12px;
+    border-radius: 5%;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
 }
 
-.NavBarLogo{
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 24px;
-  /* identical to box height, or 100% */
-  border-radius: 5%;
-  width: 6rem;
-
-  transition: transform 0.5s ease-out;
+.NavBarLogo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    border-radius: 5%;
+    width: 6rem;
+    transition: transform 0.5s ease-out;
 }
 
-.NavBarLogo:hover{
-  transform: scale(1.05);
+.NavBarLogo:hover {
+    transform: scale(1.05);
 }
 
 .NavBarText {
-  font-family: 'Share Tech Mono';
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 110%;
-
-  text-decoration: none;
-
-  /* White */
-  color: var(--dark-text);
+    font-family: 'Share Tech Mono';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110%;
+    text-decoration: none;
+    /* White */
+    color: var(--dark-text);
 }
 
 .NavBarLogoText {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(90deg, white 0%, white 100%);
-  transition: background-image 0.5s ease-in;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, white 0%, white 100%);
+    transition: background-image 0.5s ease-in;
 }
 
-.NavBarLogoText:hover{
-  background-image: linear-gradient(to right, #00c6ff, #0072ff);
+.NavBarLogoText:hover {
+    background-image: linear-gradient(to right, #00c6ff, #0072ff);
 }
 
 @keyframes gradient-move {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
-
 
 .NavBarButton {}
 
-.NavBarButton a{
-  font-family: 'Share Tech Mono';
-  text-decoration: none;
-  color: var(--dark-text-color);
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 20px;
-  gap: 12px;
-  background-color: var(--dark-navbar-button-back);
-  height: 46px;
-
-  border-radius: 5%;
-  box-shadow: var(--dark-box-shadow);
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  
-  transition: background-color 0.5s ease-out, transform 0.5s ease-out;
+.NavBarButton a {
+    font-family: 'Share Tech Mono';
+    text-decoration: none;
+    color: var(--dark-text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 12px;
+    background-color: var(--dark-navbar-button-back);
+    height: 46px;
+    border-radius: 5%;
+    box-shadow: var(--dark-box-shadow);
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    transition: background-color 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .NavBarButton a:hover {
-  background-color: var(--dark-button-back);
-  transform: scale(1.1);
+    background-color: var(--dark-button-back);
+    transform: scale(1.1);
 }
 
 
 /* hero */
 
 .Hero {
-  position: relative;
-  left: 0;
-  right: 0;
-  top: 10rem;
-
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
 }
 
 .HeroBackContainer {
-  display: flex;
-  position: relative;
-  left: 0px;
-  right: 0px;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    justify-content: center;
 }
 
 .HeroBackground {
-  /* top: -5rem; */
-  display: flex;
-  position: absolute;
-  width: 110%;
-  top: -6rem;
-  left: -5%;
-  flex-direction: row;
-  margin: 0 auto;
-  /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5); */
-  background-size: cover;
-  overflow-x: hidden;
-  z-index: -1;
+    /* top: -5rem; */
+    display: flex;
+    position: absolute;
+    width: 110% !important;
+    height: auto !important;
+    top: -6rem;
+    left: -5%;
+    flex-direction: row;
+    margin: 0 auto;
+    /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5); */
+    background-size: cover;
+    overflow-x: hidden;
+    z-index: -1;
 }
 
 .HeroSpacing {
-  height: 38rem;
-  animation: slide-up 5s ease-out forwards;
+    height: 50rem;
+    animation: slide-up 5s ease-out forwards;
 }
 
-@keyframes slide-up{
-  0% {
-    height: 40rem;
-  }
-  100% {
-    height: 34rem;
-  }
+@keyframes slide-up {
+    0% {
+        height: 40rem;
+    }
+    100% {
+        height: 34rem;
+    }
 }
 
 .HeroText {
-  font-family: "Share Tech Mono";
-  color: var(--dark-text-color);
-  font-size: 30px;
-  line-height: 200%;
-  text-align: center;
+    font-family: "Share Tech Mono";
+    color: var(--dark-text-color);
+    font-size: 30px;
+    line-height: 200%;
+    text-align: center;
+    padding: 10px;
 }
 
 .HeroTitle {
-  font-size: 50px;
+    font-size: 50px;
 }
 
 .HeroSubtitle {
-  font-family: "Dancing Script";
-  color: var(--dark-text-color);
+    font-family: "Dancing Script";
+    color: var(--dark-text-color);
 }
 
 .HeroIcon {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* padding: 0px 20px; */
-  font-family: "Indie Flower";
-  font-size: 10px;
-
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 20px; */
+    font-family: "Indie Flower";
+    font-size: 10px;
 }
 
-.HeroIconImage{
-  /* Inside auto layout */
-  width: 5rem;
-  height: 5rem;
-  padding: 2px;
-  border-radius: 10%;
-  translate: 1.5rem 1rem;
-  background-color: white;
+.HeroIconImage {
+    /* Inside auto layout */
+    width: 5rem;
+    height: 5rem;
+    padding: 2px;
+    border-radius: 10%;
+    translate: 1.5rem 1rem;
+    background-color: white;
 }
+
 
 /*  content cards  */
 
 .ContentCard {
-  display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  margin-bottom: 1rem;
-  font-family: "Share Tech Mono";
-  background: var(--dark-content-back);
-  border-radius: 5%;
-  justify-items: center;
-  justify-content: left;
-  text-align: left !important;
-  transition: all 0.5s ease-out;
-  box-shadow: var(--dark-content-shadow);
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 1rem;
+    font-family: "Share Tech Mono";
+    background: var(--dark-content-back);
+    border-radius: 5%;
+    justify-items: center;
+    justify-content: left;
+    text-align: left !important;
+    transition: all 0.5s ease-out;
+    box-shadow: var(--dark-content-shadow);
 }
 
 .ContentCard img {
-  width: 100%;
-  height: auto;
-  border-radius: 10%;
-  box-shadow: var(--dark-content-shadow);
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: var(--dark-content-shadow);
 }
 
 .ContentCard h1 {
-  font-size: 30px;
-  /* line-height: 100%; */
-  text-shadow: var(--dark-h1-shadow);
-  padding: 10px;
-  font-family: "Share Tech Mono";
-  height: 1rem;
+    font-size: 30px;
+    /* line-height: 100%; */
+    text-shadow: var(--dark-h1-shadow);
+    padding: 10px;
+    font-family: "Share Tech Mono";
+    height: 1rem;
 }
 
 .ContentCard h2 {
-  font-size: 20px;
-  /* line-height: 200%; */
-  font-family: "Indie Flower";
+    font-size: 20px;
+    /* line-height: 200%; */
+    font-family: "Indie Flower";
 }
 
 .ContentCard:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .ContentContainer {
-  margin: 1rem;
-  position: relative;
+    margin: 1rem;
+    position: relative;
+}
+
+.ContentImage {
+    width: 100% !important;
+    height: auto;
 }
 
 
 /* github */
+
 .Github {
-  position: relative;
-  top: 10rem;
-  padding: 20px;
-  font-family: "Share Tech Mono";
+    position: relative;
+    top: 10rem;
+    padding: 20px;
+    font-family: "Share Tech Mono";
 }
 
 .GithubTitle {
-  font-size: 50px;
-  line-height: 200%;
-  text-shadow: var(--dark-h1-shadow);
-  padding: 10px;
+    font-size: 50px;
+    line-height: 200%;
+    text-shadow: var(--dark-h1-shadow);
+    padding: 10px;
 }
 
 .GithubSubtitle {
-  font-size: 20px;
-  line-height: 200%;
-  translate: 20px;
+    font-size: 20px;
+    line-height: 200%;
+    translate: 20px;
 }
 
 .GithubContentContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
 }
+
 
 /*  side by side containre  */
 
 .Side2ContentContainer {
-  position: relative;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  top: 10rem;
-  grid-column-gap: 0.5rem;
+    position: relative;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 10rem;
+    grid-column-gap: 0.5rem;
 }
 
 .Side2ContentSection {
-  width: 100%;
+    width: 100%;
 }
 
+
 /* spotify */
+
 .Spotify {
-  position: relative;
+    position: relative;
+    /* top: 10rem; */
 }
 
 .SpotifyFrame {
-  border: none;
-  width: 100%;
-  padding: 4px;
-  height: 20rem;
-  background: var(--dark-spotify-back);
-  border-radius: 5%;
+    border: none;
+    width: 100%;
+    padding: 4px;
+    height: 20rem;
+    background: var(--dark-spotify-back);
+    border-radius: 5%;
 }
 
 .SpotifyTitle {
-  font-size: 50px;
-  line-height: 200%;
-  text-shadow: var(--dark-h1-shadow);
-  padding: 10px;
-  font-family: var(--title-font);
+    font-size: 50px;
+    line-height: 200%;
+    text-shadow: var(--dark-h1-shadow);
+    padding: 10px;
+    font-family: var(--title-font);
 }
 
 .SpotifySubtitle {
-  font-family: var(--des-font);
-  font-size: 20px;
-  line-height: 200%;
-  translate: 20px;
+    font-family: var(--des-font);
+    font-size: 20px;
+    line-height: 200%;
+    translate: 20px;
 }
 
 
 /* kofi */
+
 .Kofi {
-  position: relative;
+    position: relative;
+    /* top: 10rem; */
 }
 
 .KofiFrame {
-  border: none;
-  width: 100%;
-  padding: 4px;
-  height: 20rem;
-  background: var(--dark-kofi-back);
-  padding: 5px;
-  border-radius: 5%;
+    border: none;
+    width: 100%;
+    padding: 4px;
+    height: 20rem;
+    background: var(--dark-kofi-back);
+    padding: 5px;
+    border-radius: 5%;
 }
 
 .KofiTitle {
-  font-size: 50px;
-  line-height: 200%;
-  text-shadow: var(--dark-h1-shadow);
-  padding: 10px;
-  font-family: var(--title-font);
+    font-size: 50px;
+    line-height: 200%;
+    text-shadow: var(--dark-h1-shadow);
+    padding: 10px;
+    font-family: var(--title-font);
 }
 
 .KofiSubtitle {
-  font-family: var(--des-font);
-  font-size: 20px;
-  line-height: 200%;
-  translate: 20px;
+    font-family: var(--des-font);
+    font-size: 20px;
+    line-height: 200%;
+    translate: 20px;
 }
 
 
 /* about me */
+
 .About {
-  position: relative;
-  top: 10rem;
+    position: relative;
+    top: 10rem;
 }
 
 .AboutTitle {
-  font-size: 50px;
-  line-height: 200%;
-  text-shadow: var(--dark-h1-shadow);
-  padding: 10px;
-  font-family: var(--title-font);
+    font-size: 50px;
+    line-height: 200%;
+    text-shadow: var(--dark-h1-shadow);
+    padding: 10px;
+    font-family: var(--title-font);
 }
 
 .AboutSubtitle {
-  font-family: var(--des-font);
-  font-size: 20px;
-  line-height: 200%;
-  translate: 20px;
+    font-family: var(--des-font);
+    font-size: 20px;
+    line-height: 200%;
+    translate: 20px;
 }
 
 .AboutContainer {
-  text-decoration: none;
-  font-family: var(--title-font);
-  color: var(--dark-text-color);
-  display: grid;
-  margin: 1rem;
+    text-decoration: none;
+    font-family: var(--title-font);
+    color: var(--dark-text-color);
+    display: grid;
+    margin: 1rem;
 }
 
 .AboutSubContainer {
-  padding: 10px;
-  display: grid; 
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
 
 .AboutCard {
-  padding: 10px;
+    padding: 10px;
 }
 
 .AboutSubContainer img {
-  width: 100%;
+    width: 100%;
 }
 
 
 /* contact */
+
 .Contact {
-  position: relative;
-  top: 10rem;
-  margin: 1rem;
+    position: relative;
+    top: 10rem;
+    margin: 1rem;
 }
 
 .ContactTitle {
-  font-size: 50px;
-  line-height: 200%;
-  text-shadow: var(--dark-h1-shadow);
-  padding: 10px;
-  font-family: var(--title-font);
+    font-size: 50px;
+    line-height: 200%;
+    text-shadow: var(--dark-h1-shadow);
+    padding: 10px;
+    font-family: var(--title-font);
 }
 
 .ContactSubtitle {
-  font-family: var(--des-font);
-  font-size: 20px;
-  line-height: 200%;
-  translate: 20px;
+    font-family: var(--des-font);
+    font-size: 20px;
+    line-height: 200%;
+    translate: 20px;
 }
 
 .ContactEmailSender {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr, 1fr, 1fr;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr, 1fr, 1fr;
 }
 
+
+/* refactoring everythign 💀 */
+
+@media (max-width: 1220px) {}

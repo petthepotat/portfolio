@@ -1,26 +1,34 @@
 :root {
-
     /*  dark mode */
     --dark-background: black;
     --dark-text-color: white;
-    
     --dark-navbar-button-back: #181818;
     --dark-button-back: rgb(10, 10, 10, 200);
     --dark-button-hover: #363636;
     --dark-text: white;
-
     --dark-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
-
     --dark-content-back: rgba(37, 36, 36, 0.5);
     --dark-content-shadow: 5px 5px 5px rgba(255, 255, 255, 0.158);
-
     --dark-h1-shadow: 5px 5px #363636;
-
     --dark-spotify-back: #121212;
     --dark-kofi-back: #191a1d;
-
     --title-font: "Share Tech Mono";
     --des-font: "Indie Flower";
-
     /* light mode */
+}
+
+html {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+    background-color: var(--dark-background);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--dark-button-hover);
+    height: 5rem;
+    border: 3px solid var(--dark-navbar-button-back);
+    border-radius: 10px;
 }
